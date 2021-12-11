@@ -1,0 +1,27 @@
+/*Program to calculate the following serie
+    1 - 2 + 3 - 4 +....+ n
+  Developed By Shobhit Kumar Patakar
+  on 07 March 2020
+  */
+
+  #include<stdio.h>
+  #include<conio.h>
+
+  void main() {
+	float sum = 0.0;
+	float cnt = 1.0,no,n_term;
+	clrscr();
+
+	printf("Enter the value of n for following  \n \
+		\t\t 1/2 + 2/3 + ...+ n/n+1 \n");
+	scanf("%f",&no);
+
+	while(cnt <= no) {
+		sum = sum + cnt/(cnt+1);
+		cnt++;
+		}
+
+	printf("\nSum = %f",sum);
+	getch();
+
+	}

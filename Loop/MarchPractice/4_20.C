@@ -1,0 +1,49 @@
+/*Program to calculate
+	1 + x + x^2/!2 + x^3/!3 +...+ x^n/!n
+  Developed by Shobhit Kumar Patkar
+  on 08 March 2020
+  */
+
+  #include<stdio.h>
+  #include<conio.h>
+
+  void main() {
+	float no = 1, fact = 1, sum = 1,base,n;
+	int cnt;
+	clrscr();
+
+	printf("Enter the value of x and n \n");
+	scanf("%f%f",&base,&n);
+
+	for( cnt = 1; cnt <= n; cnt++) {
+
+		fact = fact * cnt;
+		no = no * base;
+
+
+		if(cnt %2 == 0) sum = sum + no/fact;
+		else sum = sum - no/fact;
+
+		}
+
+
+	printf("\nSum = %f",sum);
+	getch();
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
